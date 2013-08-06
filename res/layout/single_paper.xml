@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+  <TextView
+      
+      android:id="@+id/paperCodeLbl"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+        android:paddingBottom="2dip"
+            android:paddingTop="6dip"
+            android:textColor="@color/darkBlue"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+  <TextView
+      android:id="@+id/paperNameLbl"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/paperCodeLbl"
+        android:paddingBottom="2dip"
+            android:paddingTop="6dip"
+            android:textColor="@color/darkBlue"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+
+
+  <TextView
+      android:id="@+id/descriptionLbl"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/paperNameLbl"
+            android:paddingBottom="2dip"
+            android:textColor="@color/darkGrey" />
+  
+   <TextView
+      android:id="@+id/shortDescriptionLbl"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/descriptionLbl"
+      android:textColor="@color/darkGrey"
+      android:textStyle="bold"
+      android:visibility="gone"/>
+
+  <TextView
+      android:id="@+id/lecturerLbl"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentLeft="true"
+      android:layout_below="@id/shortDescriptionLbl"
+       android:paddingBottom="2dip"
+            android:paddingTop="6dip"
+            android:textColor="@color/darkBlue"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+  <Button
+      android:id="@+id/contactButton"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_toRightOf="@+id/lecturerLbl"
+      android:layout_below="@+id/descriptionLbl"
+      android:background="@drawable/contact" />
+
+</RelativeLayout>

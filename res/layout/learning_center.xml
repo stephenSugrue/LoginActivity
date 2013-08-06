@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">"
+    
+<TextView
+    android:id="@+id/learnginCenter"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/learningCenterHeading"
+    android:textSize="22sp"
+    android:layout_marginLeft="10dp"
+    android:textColor="@color/darkBlue"/>
+
+    <TextView 
+        android:id="@+id/learningInfo"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/learningCenter"
+        android:textSize="17sp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/black"/>
+    
+    <ListView
+        android:id="@+id/servicesList"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:dividerHeight="-17dp"
+        android:divider="@color/black"
+        android:textColor="@color/black"
+        android:cacheColorHint="@color/white"/>
+    
+	
+	   <!-- <ImageView
+	       android:id="@+id/mapImage"
+	       android:layout_width="match_parent"
+	       android:layout_height="match_parent"
+	       android:src="@drawable/polytechmap"
+	       android:minHeight="100dp"
+	       android:minWidth="100dp" />-->
+
+</LinearLayout>

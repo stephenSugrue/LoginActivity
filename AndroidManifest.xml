@@ -1,0 +1,259 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.squareup.timessquare.sample"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+   <!-- Allow to connect with Internet -->
+	<uses-permission android:name="android.permission.INTERNET" />
+	 <uses-permission
+  		android:name="android.permission.READ_CALENDAR">
+  	</uses-permission>
+  	
+	<uses-permission
+  	 	android:name="android.permission.WRITE_CALENDAR">
+  	 </uses-permission>
+
+	    
+ 	<uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+  
+
+    <!-- GCM requires a Google account. -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <!-- Keeps the processor from sleeping when a message is received. -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <!-- Creates a custom permission so only this app can receive its messages. -->
+    <permission
+        android:name="khs.studentsupport.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="khs.studentsupport.permission.C2D_MESSAGE" />
+
+    <!-- This app has permission to register and receive data message. -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <!-- Network State Permissions to detect Internet status -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <!-- Permission to vibrate -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="17" />
+
+    <application
+        android:label="@string/app_name"
+        android:icon="@drawable/supporticon"
+        android:debuggable="true"
+        android:supportsRtl="true"
+        >
+
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/app_name"
+            android:configChanges="orientation|screenSize|keyboardHidden"
+            >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        
+         <activity
+            android:label=" "
+            android:name="khs.studentsupport.SelectedSupportContact" >
+        </activity>
+        
+           <!--  XML  Activity -->
+        <activity
+            android:label="Support People" 
+            android:name="khs.studentsupport.SupportXMLParsingActivity"></activity>
+        
+         <activity
+            android:label=" "
+            android:name=".SingleMenuItemActivity" >
+        </activity>
+   
+         <!--  XML  Activity -->
+        <activity
+            android:label="Support People" 
+            android:name=".AndroidXMLParsingActivity"></activity>
+        
+        <!--  Dashboard Activity -->
+        <activity
+            android:label="Support" 
+            android:name=".DashboardActivity"></activity>
+        
+         
+        <activity
+            android:label="" 
+            android:name=".RegisterForGCMActivity"></activity>
+        
+        
+         <activity
+            android:label="" 
+            android:name=".StaffContactsXMLParsingActivity"></activity>
+         
+           <activity
+            android:label="" 
+            android:name="com.squareup.timessquare.sample.CalanderActivity"></activity>
+         
+         
+         
+    
+          <activity
+            android:label="" 
+            android:name=".SelectedStaffMember"></activity>
+        
+        <activity
+            android:label="" 
+            android:name=".PushMainActivity"></activity>
+        
+        
+        
+         <activity
+            android:label="MonthView" 
+            android:name=".MonthView"></activity>
+         
+             
+         <activity
+            android:label="" 
+            android:name=".MonthDescriptor"></activity>
+         
+         
+         <activity
+            android:label="" 
+            android:name=".MonthCellDescriptor"></activity>
+         
+         
+
+        <!--  Register Activity -->
+        <activity
+            android:label="Register New Account" 
+            android:name=".RegisterActivity"></activity>
+        
+        <!--  Contacts Activity -->
+         <activity
+              android:name=".Contacts"
+              android:label="Contacts">
+              	
+            </activity>
+  
+         <!-- Scholarship Activity -->
+           <activity
+            android:name=".Scholarships"
+            android:label="Scholarships" >
+            
+        </activity> 
+         
+          <!-- Videos Activity -->
+          <activity
+            android:name=".Videos"
+            android:label="Videos" >
+            
+        </activity> 
+          
+          
+    <!-- Calendar Activity -->
+    
+        <activity
+            android:name=".CalendarView"
+            android:label="Calendar" >
+           
+        </activity> 
+        
+           <activity
+            android:name=".LearningCenter"
+            android:label="LearningCenter" >
+           
+        </activity> 
+       
+          
+    <!-- papers activity -->
+     <activity
+            android:name=".Papers"
+            android:label="Papers" >
+            
+        </activity> 
+        
+      <!-- HomeTab Activity -->
+          <activity
+            android:name=".HomeTab"
+            android:label="HomeTab" >
+            </activity>
+            
+                <!-- SupportTab Activity -->
+          <activity
+            android:name=".SupportTab"
+            android:label="SupportTab" >
+                </activity>
+                
+                <!-- StudentsTab Activity -->
+          <activity
+            android:name=".StudentsTab"
+            android:label="StudentsTab" >
+            </activity>
+            
+             
+          <activity
+            android:name=".PapersListItems"
+            android:label="PapersListItems" >
+            </activity>
+            
+              <activity
+            android:name=".ScholarshipList"
+            android:label="ScholarshipList" >
+            </activity>
+     
+                <!-- All contacts Activity -->
+        <activity
+            android:name="khs.studentsupport.AllContactsActivity"
+            android:label="All Products" >
+        </activity>
+        
+         <!-- Add contact Activity -->
+        <activity
+            android:name="NewContactActivity"
+            android:label="Add New Product" >
+        </activity>
+
+        <!-- Edit contact Activity -->
+        <activity
+            android:name="khs.studentsupport.ShowIndividualActivity"
+            android:label="Single Contact" >
+        </activity>      
+        
+         <!-- Edit contact Activity -->
+        <activity
+            android:name=".CalanderActivity"
+            android:label="" >
+        </activity>      
+
+
+        <receiver
+            android:name="com.google.android.gcm.GCMBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+
+                <!-- Receives the actual messages. -->
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <!-- Receives the registration id. -->
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.androidhive.pushnotifications" />
+            </intent-filter>
+        </receiver>
+
+        <service android:name=".GCMIntentService" />
+        
+     </application>
+        
+
+</manifest>

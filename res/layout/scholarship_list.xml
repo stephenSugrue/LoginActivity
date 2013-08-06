@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?><RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+  <TextView
+      
+      android:id="@+id/scholNameLbl"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:textColor="@color/darkGrey" />
+
+  <TextView
+      android:id="@+id/scholDescLbl"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/scholNameLbl"
+      android:textColor="@color/darkGrey" />
+
+  <!-- Room Label -->
+
+  <TextView
+      android:id="@+id/scholShortDescLbl"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/scholDescLbl"
+      android:textColor="@color/darkGrey"
+      android:textStyle="bold" />
+  
+   <TextView
+      android:id="@+id/closeDateLbl"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:layout_below="@id/scholShortDescLbl"
+      android:textColor="@color/darkGrey"
+      android:textStyle="bold"
+      android:visibility="gone"/>"
+
+  <TextView
+      android:id="@+id/requirementsLbl"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_alignParentLeft="true"
+      android:layout_below="@id/closeDateLbl"
+      android:textColor="@color/darkGrey"
+      android:textStyle="bold" />
+
+
+
+</RelativeLayout>
