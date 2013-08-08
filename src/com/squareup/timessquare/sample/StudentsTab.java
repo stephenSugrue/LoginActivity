@@ -52,6 +52,11 @@ public class StudentsTab extends Activity {
 					Intent i = new Intent(getApplicationContext(), StaffContactsXMLParsingActivity.class);
 					startActivity(i);
 				}
+				if (lv.getItemAtPosition(position) == studentItems[3])
+				{
+					Intent i = new Intent(getApplicationContext(), RegisterForGCMActivity.class);
+					startActivity(i);
+				}
 			}
 		});
 			

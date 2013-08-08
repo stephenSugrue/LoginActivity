@@ -104,6 +104,7 @@
         <item>Papers</item>
         <item>Calendar</item>
         <item>Staff Contacts</item>
+        <item>Register for GCM</item>
     </string-array>
     
      <string-array name="supportItems">
