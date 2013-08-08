@@ -68,6 +68,12 @@
         
          <activity
             android:label=" "
+            android:name=".AllContactsActivity" >
+        </activity>
+        
+        
+         <activity
+            android:label=" "
             android:name="khs.studentsupport.SelectedSupportContact" >
         </activity>
         
@@ -101,10 +107,7 @@
             android:label="" 
             android:name=".StaffContactsXMLParsingActivity"></activity>
          
-           <activity
-            android:label="" 
-            android:name="com.squareup.timessquare.sample.CalanderActivity"></activity>
-         
+          
          
          
     

@@ -35,7 +35,7 @@ public class SupportTab extends Activity{
 				//Contacts
 				if(lv.getItemAtPosition(position) == supportItems[0])
 				{
-					Intent i = new Intent(getApplicationContext(), AndroidXMLParsingActivity.class);
+					Intent i = new Intent(getApplicationContext(), AllContactsActivity.class);
 					startActivity(i);
 				}
 				//Learning Center
