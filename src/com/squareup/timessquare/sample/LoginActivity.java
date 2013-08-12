@@ -5,6 +5,7 @@ package com.squareup.timessquare.sample;
 import json_library.DatabaseHandler;
 import json_library.UserFunctions;
 
+
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -85,8 +86,16 @@ public class LoginActivity extends Activity {
 				loginErrorMsg.setText("Please enter you email");
 				}
 				
-				else
-				{
+				 if (Appconfig.activity == false) {
+					 Intent intent = new Intent();
+					 intent.setClass(getApplicationContext(),RegisterForGCMActivity.class);
+					 startActivity(intent);
+					 Appconfig.activity=true;
+					// WelcomeActivity.this.finish();
+					 }
+				 else{
+				
+				
 
 				// check for login response
 				try {
